@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="" id="myForm" class="form">
+        <label for="todo-input">Add To Do: </label>
+        <input type="text" name="todo-input" id="todo-input" />
+        <button class="todo-add-btn">Add</button>
+      </form>
+    </div>
+
+    <div class="display-todos">
+      <div class="pending-todos">
+        <div class="title">
+          <h1>Tasks to be completed</h1>
+          <hr />
+          <p class="pending-task-count">No Tasks are added</p>
+        </div>
+      </div>
+      <div class="completed-todos">
+        <div class="title">
+          <h1>Completed</h1>
+          <hr />
+          <p class="completed-task-count">No Tasks Completed</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

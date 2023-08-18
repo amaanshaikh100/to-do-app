@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 75%;
+  height: 175px;
+  margin: 30px auto;
+}
+
+.form-container {
+  background-color: rgb(194, 214, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+#todo-input {
+  font-size: 14px;
+  height: 100%;
+}
+
+.todo-add-btn {
+  color: #fff;
+  cursor: pointer;
+  height: 100%;
+  padding: 0 18px;
+  background-color: rgb(40, 209, 40);
+  font-weight: bold;
+}
+
+.form {
+  height: 30px;
+}
+
+.form label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.todo-container {
+  margin-top: 20px;
+  padding: 0 14px;
+  display: flex;
+  /* background-color: red; */
+}
+
+.todo-checkbox {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.delete-todo {
+  background-color: rgb(255, 12, 12);
+}
+
+.edit-todo {
+  background-color: blue;
+}
+
+.edit-todo,
+.delete-todo {
+  font-size: 12px;
+  margin-left: 9px;
+  color: white;
+  padding: 2px 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.todo {
+  font-size: 20px;
+  width: 80%;
+}
+
+.display-todos {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  height: 550px;
+}
+
+.pending-todos {
+  background-color: rgb(240, 254, 240);
+}
+
+.pending-todos .title {
+  background-color: rgb(240, 254, 240);
+  /* background-color: rgb(248, 230, 66); */
+}
+
+.title h1 {
+  padding: 14px 0;
+}
+
+.pending-task-count,
+.completed-task-count {
+  margin-top: 10px;
+  background-color: rgb(248, 230, 66);
+  text-align: center;
+  padding: 6px 0;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(232, 16, 16);
+}
+
+.completed-task-count {
+  background-color: rgb(28, 169, 70);
+  color: #fff;
+}
+
+.completed-todos .title {
+  background-color: rgb(255, 233, 233);
+}
+
+.title {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+.completed-todos {
+  background-color: rgb(255, 233, 233);
+}
+
+.pending-todos,
+.completed-todos {
+  padding: 0 20px;
+  position: relative;
+  overflow: scroll;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.edit-todo-btn {
+  background-color: rgb(92, 92, 255);
+}
